@@ -38,10 +38,10 @@ jobs:
     #Docker Image Build
       - run:
           command: |
-            docker image build -t pwalt/stickwithit:firsttry .
+            docker image build -t pwalt/stickwithit:v1.0 -f post-app/docker.Dockerfile .
       - run:
           command: |
-            docker login -u pwalt -p *France23 pwalt
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
       - run:
           command: |
-            docker push pwalt/stickwithit:firsttry
+            docker push pwalt/stickwithit:v1.0
