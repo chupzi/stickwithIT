@@ -1,5 +1,8 @@
+.big {
+    width: 80%;
+}
 .Card {
-    width: 25%;
+    /* width: 40%; */
 };
 .title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

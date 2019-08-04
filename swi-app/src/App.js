@@ -20,7 +20,15 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <CardModal />
+      {/* <div style={{display:'flex', flexWrap: 'wrap'}}> */}
+        <div className="hi" style={{ display: 'grid', gridTemplateColumns:'repeat(4, 1fr)'}}>
+          <CardModal  /> 
+          <CardModal />
+          <CardModal />
+          <CardModal />
+        </div>
+      {/* </div> */}
+      
     </div>
   );
 }

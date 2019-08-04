@@ -14,7 +14,7 @@ import {
 const CardModal = (props) => {
   const {text, imgItems, eventName, eventDescription} = props;
   return (
-    <div>
+    <div className="big">
       <Card className="Card">
         <CardImg
           top
