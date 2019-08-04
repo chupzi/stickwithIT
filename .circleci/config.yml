@@ -28,3 +28,13 @@ jobs:
          key: v1-dependencies-{{ checksum “package.json” }}
      # run tests!
      #- run: yarn test
+      # Docker Image Build
+        - run:
+            command: |
+              docker image build -t pwalt/stickwithit:firsttry .
+        - run:
+            command: |
+              docker login -u pwalt -p *France23 pwalt
+        - run:
+            command: |
+              docker push pwalt/stickwithit:firsttry
