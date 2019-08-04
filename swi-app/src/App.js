@@ -21,6 +21,9 @@ function App() {
         </a>
       </header> */}
       {/* <div style={{display:'flex', flexWrap: 'wrap'}}> */}
+      <div className="page-banner">
+        <img></img>
+      </div>
         <div className="hi" style={{ display: 'grid', gridTemplateColumns:'repeat(4, 1fr)'}}>
           <CardModal  /> 
           <CardModal />
