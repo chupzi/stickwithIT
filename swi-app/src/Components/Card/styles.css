@@ -1,6 +1,12 @@
 .big {
     width: 85%;
     margin-left: 6%;
+}
+.box {
+    width: 10%
+}
+.Card {
+    /* width: 40%; */
 };
 .title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
