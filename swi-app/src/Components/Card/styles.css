@@ -1,6 +1,9 @@
 .big {
     width: 80%;
 }
+.box {
+    width: 10%
+}
 .Card {
     /* width: 40%; */
 };
