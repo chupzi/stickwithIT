@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import Post from "./Components/Post";
+import Post from "./Components/Post/Post.jsx";
 
 ReactDOM.render(<Post />, document.getElementById("root"));
 
