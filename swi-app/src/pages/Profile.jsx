@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, Button, CardHeader, CardFooter, CardBody,
-  CardTitle, CardText } from 'reactstrap';
+import { Card, Button, CardHeader, CardBody,
+  CardTitle, CardText,CardImg,CardSubtitle } from 'reactstrap';
 
 const SideBar = (props) => {
   return (
@@ -32,7 +32,17 @@ const SideBar = (props) => {
           <CardText><a href={"https://pages.beamery.com/vmware/page/codehouse"}>VMWare Codehouse</a></CardText>
         </CardBody>
       </Card>
+
+      {/* <div style={{width:"140%", marginLeft:"500%"}}>
+        <Card>
+        <CardImg top width="100%" src="swi-app/src/Components/img/connection_img.jpg" alt="Card image cap" />
+        <CardBody>
+          <CardSubtitle>100 Connections</CardSubtitle>
+        </CardBody>
+      </Card>
+    </div> */}
     </div>
+    
   );
 };
 
