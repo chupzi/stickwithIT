@@ -5,7 +5,7 @@ import Box from './pages/Components/Box/Box';
 import Media from './pages/Components/Media/MediaHolder';
 import Profile from './pages/Profile';
 import Home from './pages/Home';
-
+import Companies from './pages/Companies';
 import Post from './pages/Components/Post/Post';
 import {Nav, Navbar} from 'react-bootstrap';
 import {Route, HashRouter, NavLink} from 'react-router-dom';
