@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import CardModal from './Components/Card/CardModal';
 import NavBar from './Components/NavBar/NavBar';
-
+import Post from './Components/Post/Post';
+import {Nav, Navbar} from 'react-bootstrap';
+import {Route, HashRouter, NavLink} from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <div className="PageBanner">
-        <img className="image" src="data:image/png;base64,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"/>
-      <span className ="text">Events Page</span>
+    <HashRouter>
+      <div className="App">
+        {/* <NavBar /> */}
+          {/* <div className="hi" style={{ display: 'grid', gridTemplateColumns:'repeat(4, 1fr)'}}>
+            <CardModal  /> 
+            <CardModal />
+            <CardModal />
+            <CardModal />
+          </div> */}
+          {/* <Post /> */}
+          <Navbar bg="dark" variant="dark">
+          <Navbar.Brand href="#home">StickWithIT</Navbar.Brand>
+          <Nav>
+            <ul className="header">
+              <li className="list"><NavLink className="link" to="/">Home</NavLink></li>
+              <li className="list"><NavLink className="link" to="/stuff">Stuff</NavLink></li>
+              <li className="list"><NavLink className="link" to="/contact">Contact</NavLink></li>
+            </ul>
+          </Nav>
+          </Navbar>
+            <div className="content">
+              <Route exact path="/" component={CardModal}/>
+              <Route path="/stuff" component={Post}/>
+              <Route path='/contact' component={Post} />
+            </div>
       </div>
-      {/* <hr className="horizontal" /> */}
-      <br />
-        <div className="CardModal">
-          <CardModal  /> 
-          <CardModal />
-          <CardModal />
-          <CardModal />
-        </div>
-    </div>
+    </HashRouter>
   );
 }
 
