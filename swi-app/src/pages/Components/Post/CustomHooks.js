@@ -23,10 +23,6 @@ const useSignUpForm = (callback) => {
     handleSubmit,
     handleInputChange,
     inputs,
-<<<<<<< HEAD:swi-app/src/Components/Post/CustomHooks.js
-    // handleText,
-=======
->>>>>>> 5f6ec9bd00df411b2b1aafaa0eef08c5c7a066b0:swi-app/src/pages/Components/Post/CustomHooks.js
     post
   };
 };
