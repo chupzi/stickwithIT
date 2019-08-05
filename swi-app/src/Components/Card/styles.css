@@ -2,7 +2,11 @@
     width: 80%;
 }
 .box {
-    width: 8%
+    width: 8%;
+}
+.mediaHold {
+    width: 15%;
+    
 }
 .Card {
     /* width: 40%; */

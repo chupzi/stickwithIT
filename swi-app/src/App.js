@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import CardModal from './Components/Card/CardModal';
 import Box from './Components/Box/Box';
+import Media from './Components/Media/MediaHolder';
 
 import NavBar from './Components/NavBar/NavBar';
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <CardModal /> */}
         </div>
       <Box />
-      
+      <Media />
     </div>
   )}
 
