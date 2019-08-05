@@ -1,3 +1,53 @@
+/* post page */
+.label {
+  /* width: 100%; */
+  /* height: 200px; */
+  display: block;
+  padding-top: 4%;
+}
+.media {
+  float: center;
+  display: block;
+  width: 30%;
+  
+}
+.media-body {
+  width: 20%;
+  
+  
+}
+.profile-image {
+  width: 100%;
+  border-radius: 50%;
+  
+}
+.persona {
+ 
+  display: block;
+  float: left;
+  padding-bottom: 10%;
+  /* padding-top: 2%; */
+}
+.persona-name {
+  padding-top:4%;
+  float: right;
+  width: 100%;
+  font-family: '"Lucida Sans Unicode", "Lucida Grande", sans-serif';
+}
+.persona-image {
+  width: 50%;
+  border-radius: 50%;
+}
+.side-content{
+  width: 15%;
+  float:left;
+  padding-top: 1%;
+  padding-left:1%;
+}
+.side-bar {
+  /* padding-top: 15%; */
+}
+/*Card page*/
 .CardModal {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -7,7 +57,7 @@
   align-content: left;
 }
 .text {
-  font-family: 'Arial Narrow';
+  font-family: '"Lucida Sans Unicode", "Lucida Grande", sans-serif';
   font-size: 30px;
   font-weight: bold;
   vertical-align: -30px;

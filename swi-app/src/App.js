@@ -4,9 +4,8 @@ import CardModal from './pages/Components/Card/CardModal';
 import Box from './pages/Components/Box/Box';
 import Media from './pages/Components/Media/MediaHolder';
 import Profile from './pages/Profile';
-import EventsPage from "./pages/EventsPage";
+import Home from './pages/Home';
 
-import NavBar from './pages/Components/NavBar/NavBar';
 import Post from './pages/Components/Post/Post';
 import {Nav, Navbar} from 'react-bootstrap';
 import {Route, HashRouter, NavLink} from 'react-router-dom';
@@ -20,7 +19,7 @@ function App() {
           <Nav>
             <ul className="header">
               <li className="list"><NavLink className="link" to="/">Home</NavLink></li>
-              <li className="list"><NavLink className="link" to="/stuff">Stuff</NavLink></li>
+              <li className="list"><NavLink className="link" to="/Companies">Companies</NavLink></li>
               <li className="list"><NavLink className="link" to="/eventspage">Events</NavLink></li>
               <li className="list"><NavLink className="link" to="/profile">Profile</NavLink></li>
               <li className="list"><NavLink className="link" to="/contact">Contact</NavLink></li>
@@ -28,8 +27,8 @@ function App() {
           </Nav>
           </Navbar>
             <div className="content">
-              <Route exact path="/" component={CardModal}/>
-              <Route path="/eventspage" component={EventsPage}/>
+              <Route exact path="/" component={Home}/>
+              <Route path="/companies" component={Companies}/>
               <Route path="/profile" component={Profile}/>
               <Route path='/contact' component={Post} />
             </div>
