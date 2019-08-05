@@ -1,9 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const useSignUpForm = (callback) => {
   const [inputs, setInputs] = useState({});
   const [change, setChange] = useState('');
   const [post, setPost] = useState('');
+
   const handleSubmit = (event) => {
     if (event) {
       event.preventDefault();
@@ -22,6 +23,7 @@ const useSignUpForm = (callback) => {
     handleSubmit,
     handleInputChange,
     inputs,
+    handleText,
     post
   };
 };
