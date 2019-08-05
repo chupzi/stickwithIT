@@ -20,7 +20,7 @@
   size: 50px;
 }
 .App {
-  /* text-align: center; */
+  text-align: center;
 }
 .header {
   display: flex;
