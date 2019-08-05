@@ -23,6 +23,7 @@ const useSignUpForm = (callback) => {
     handleSubmit,
     handleInputChange,
     inputs,
+    // handleText,
     post
   };
 };
