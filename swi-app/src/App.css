@@ -21,6 +21,7 @@
 }
 .App {
   /* text-align: center; */
+}
 .header {
   display: flex;
   text-align: center;
@@ -28,13 +29,12 @@
   margin-top: 10px;
   padding-left: 30%;
   align-content: center;
-=
 }
 .list {
   text-align: center;
   display: inline-block;
-  padding-left:60px;
-  padding-right: 60px;
+  padding-left:10px;
+  padding-right: 10px;
   justify-content: space-between;
   
 }
