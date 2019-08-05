@@ -1,6 +1,26 @@
+.CardModal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.image {
+  width: 25%;
+  align-content: left;
+}
+.text {
+  font-family: 'Arial Narrow';
+  font-size: 30px;
+  font-weight: bold;
+  vertical-align: -30px;
+  padding-left: 2%;
+}
+.horizontal {
+  display: block;
+  width: 70%;
+  margin-top: 0;
+  size: 50px;
+}
 .App {
   /* text-align: center; */
-}
 .header {
   display: flex;
   text-align: center;
@@ -8,6 +28,7 @@
   margin-top: 10px;
   padding-left: 30%;
   align-content: center;
+=
 }
 .list {
   text-align: center;
