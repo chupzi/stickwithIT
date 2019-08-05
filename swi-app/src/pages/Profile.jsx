@@ -4,7 +4,7 @@ import {
     CardTitle, CardText, CardImg, CardSubtitle, Container, Row, Col, textAlign
 } from 'reactstrap';
 import Image from 'react-bootstrap/Image';
-import MediaHolder from '../Components/Media/MediaHolder';
+import MediaHolder from './Components/Media/MediaHolder';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
 const SideBar = (props) => {
