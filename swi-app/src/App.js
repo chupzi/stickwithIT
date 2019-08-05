@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
-import CardModal from './Components/Card/CardModal';
-import Box from './Components/Box/Box';
-import Media from './Components/Media/MediaHolder';
-import Profile from './pages/Profile';
-
-import NavBar from './Components/NavBar/NavBar';
-import Post from './Components/Post/Post';
 import {Nav, Navbar} from 'react-bootstrap';
 import {Route, HashRouter, NavLink} from 'react-router-dom';
+import Profile from './pages/Profile';
+import Companies from './pages/Companies';
+import Home from './pages/Home';
+
 function App() {
   return (
     <HashRouter>
@@ -19,14 +16,14 @@ function App() {
             <ul className="header">
               <li className="list"><NavLink className="link" to="/">Home</NavLink></li>
               <li className="list"><NavLink className="link" to="/profile">Profile</NavLink></li>
-              <li className="list"><NavLink className="link" to="/contact">Contact</NavLink></li>
+              <li className="list"><NavLink className="link" to="/companies">Companies</NavLink></li>
             </ul>
           </Nav>
           </Navbar>
             <div className="content">
-              <Route exact path="/" component={CardModal}/>
+              <Route exact path="/" component={Home}/>
               <Route path="/profile" component={Profile}/>
-              <Route path='/contact' component={Post} />
+              <Route path='/companies' component={Companies}/>
             </div>
       </div>
     </HashRouter>
