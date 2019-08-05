@@ -7,18 +7,18 @@ import {
 
 const MediaHolder = (props) => {
 
-    const { text, body, heading } = props;
+    const { text, body, heading, src } = props;
     return (
         <div class="mediaHolder">
             <Media>
                 <Media left href="#">
-                    <Media object data-src="holder.js/64x64" alt="placeholder img" />
+                    <Media object data-src={'src'}/>
                 </Media>
                 <Media body>
                     <Media heading>
-                        Media heading
+                        {heading}
                 </Media>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    {text}
                 </Media>
             </Media>
         </div>
@@ -27,10 +27,13 @@ const MediaHolder = (props) => {
 Media.propTypes = {
     text: PropTypes.string,
     body: PropTypes.bool,
-    heading: PropTypes.bool,
-    left: PropTypes.bool
+    heading: PropTypes.string,
+    left: PropTypes.bool,
+    src: PropTypes.string
 };
 Media.defaultProps = {
     text: 'DATE',
+    header: 'header',
+    src: ''
 };
 export default MediaHolder;

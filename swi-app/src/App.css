@@ -19,6 +19,12 @@
   margin-top: 0;
   size: 50px;
 }
+.yo{
+  display: flex
+}
+.hi {
+  float: right;
+}
 .App {
   /* text-align: center; */
 }
