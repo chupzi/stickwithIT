@@ -4,6 +4,7 @@ import CardModal from './Components/Card/CardModal';
 import Box from './Components/Box/Box';
 import Media from './Components/Media/MediaHolder';
 import Profile from './pages/Profile';
+import Home from './pages/Home';
 
 import NavBar from './Components/NavBar/NavBar';
 import Post from './Components/Post/Post';
@@ -24,7 +25,7 @@ function App() {
           </Nav>
           </Navbar>
             <div className="content">
-              <Route exact path="/" component={CardModal}/>
+              <Route exact path="/" component={Home}/>
               <Route path="/profile" component={Profile}/>
               <Route path='/contact' component={Post} />
             </div>
