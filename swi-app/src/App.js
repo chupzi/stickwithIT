@@ -9,7 +9,7 @@ import Companies from './pages/Companies';
 import Post from './pages/Components/Post/Post';
 import {Nav, Navbar} from 'react-bootstrap';
 import {Route, HashRouter, NavLink} from 'react-router-dom';
-import Companies from './pages/Companies';
+
 
 function App() {
   return (
