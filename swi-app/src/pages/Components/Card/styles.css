@@ -3,7 +3,7 @@
     margin-left: 6%;
 }
 .box {
-    width: 8%;
+    width: 10%;
 }
 .mediaHold {
     width: 15%;
@@ -16,3 +16,11 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
 };
+
+.boxGroup {
+    align-self: center;
+}
+
+.cardCol {
+    align-self: center;
+}

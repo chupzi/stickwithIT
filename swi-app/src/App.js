@@ -1,14 +1,22 @@
 import React from 'react';
 import './App.css';
+<<<<<<< HEAD
+import CardModal from './pages/Components/Card/CardModal';
+import Box from './pages/Components/Box/Box';
+import EventsPage from './pages/EventsPage';
+import Media from './pages/Components/Media/MediaHolder';
+=======
 import CardModal from './Components/Card/CardModal';
 import Box from './Components/Box/Box';
 import Media from './Components/Media/MediaHolder';
 import Profile from './pages/Profile';
+>>>>>>> master
 
-import NavBar from './Components/NavBar/NavBar';
-import Post from './Components/Post/Post';
+import NavBar from './pages/Components/NavBar/NavBar';
+import Post from './pages/Components/Post/Post';
 import {Nav, Navbar} from 'react-bootstrap';
 import {Route, HashRouter, NavLink} from 'react-router-dom';
+
 function App() {
   return (
     <HashRouter>
@@ -18,14 +26,23 @@ function App() {
           <Nav>
             <ul className="header">
               <li className="list"><NavLink className="link" to="/">Home</NavLink></li>
+<<<<<<< HEAD
+              <li className="list"><NavLink className="link" to="/stuff">Stuff</NavLink></li>
+              <li className="list"><NavLink className="link" to="/eventspage">Events</NavLink></li>
+=======
               <li className="list"><NavLink className="link" to="/profile">Profile</NavLink></li>
+>>>>>>> master
               <li className="list"><NavLink className="link" to="/contact">Contact</NavLink></li>
             </ul>
           </Nav>
           </Navbar>
             <div className="content">
               <Route exact path="/" component={CardModal}/>
+<<<<<<< HEAD
+              <Route path="/eventspage" component={EventsPage}/>
+=======
               <Route path="/profile" component={Profile}/>
+>>>>>>> master
               <Route path='/contact' component={Post} />
             </div>
       </div>
