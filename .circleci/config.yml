@@ -39,10 +39,10 @@ jobs:
     #Docker Image Build
       - run:
           command: |
-            docker image build -t pwalt/stickwithit:v1.0 -f swi-app/docker.Dockerfile .
+            docker image build -t pwalt/stickwithit:v1.5 -f swi-app/docker.Dockerfile .
       - run:
           command: |
             docker login -u $DOCKER_USER -p $DOCKER_PASS
       - run:
           command: |
-            docker push pwalt/stickwithit:v1.0
+            docker push pwalt/stickwithit:v1.5
