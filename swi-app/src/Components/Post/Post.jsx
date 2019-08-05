@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import useSignUpForm from './CustomHooks';
-import OldPost from './OldPost.jsx';
 
-import './styles.css';
 const Post = (props) => {
     const {id, type, imgSrc} = props;
     const {inputs, handleInputChange, handleSubmit, post} = useSignUpForm({text:''});
@@ -23,9 +21,7 @@ const Post = (props) => {
         </div>
       </div>
       <hr className="horizontal"/>
-      <OldPost header="Girls Who Code Hackathon" body="This is a girls who code hackathon"imgSrc={imgSrc} />
-      <hr className="horizontal"/>
-      <OldPost header="VMware CodeHouse" body="Hackathon"imgSrc={imgSrc}/>
+    
     </div>
     
   );

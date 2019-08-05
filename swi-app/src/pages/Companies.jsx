@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CardModal from '../Components/Card/CardModal';
+import CardModal from './Components/Card/CardModal';
 import data from '../pages/dataUtils';
 
 const Companies = (props) => {
